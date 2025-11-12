@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bíblia Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Buscador da Bíblia</h2>
+    
+    <div class="form-grid">
+      <label for="version-select">Versão:</label>
+      <select id="version-select">
+        <option value="acf">Almeida Corrigida Fiel</option>
+        <option value="apee">Almeida Pastoral e Educativa</option>
+        <option value="nvi">Nova Versão Internacional</option>
+        <option value="ra">Almeida Revista e Atualizada</option>
+      </select>
+
+      <label for="livro-select">Livro:</label>
+      <select id="livro-select" disabled>
+        <option>Carregando livros...</option>
+      </select>
+
+      <label for="capitulo-select">Capítulo:</label>
+      <select id="capitulo-select" disabled>
+        <option>Selecione um livro...</option>
+      </select>
+
+      <label for="versiculo-input">Versículo (Opcional):</label>
+      <input type="number" id="versiculo-input" placeholder="Deixe em branco para o capítulo todo">
+    </div>
+
+    <button id="buscar-btn">Buscar</button>
+
+    <div id="resultado">
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
